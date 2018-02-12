@@ -44,9 +44,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+        
       </ul>
     </div>
   </nav>
@@ -63,9 +61,39 @@
           <%= title %>
         </p>
       </div>
+
     </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <form action="../app/views/feedback" method="POST">
+              <p>
+                  <label class="col-6 col-md-auto">Firstname:</label>
+                  <input type="text" name="username">
+              </p>
+              <p>
+                  <label class="col-6 col-md-auto">Lastname:</label>
+                  <input type="text" name="username">
+              </p>
+              <p>
+                  <label class="col-6 col-md-auto">e-mail:</label>
+                  <input type="email" name="username">
+              </p>
+              <p>
+                  <label class="col-6 col-md-auto">Password:</label>
+                  <input type="password" name="password">
+              </p>
+          
+              <p>
+                  <input class ="form-control btn btn-primary" type="submit" value="login" name="loginEnter">
+              </p>
+          </form>
+        </div>
+  
+      </div>
   </div>
 
+  
   <!-- JavaScript Section -->
   <script src="./jquery/dist/jquery.min.js"></script>
   <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
