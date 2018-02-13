@@ -21,7 +21,7 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My Website</a>
+    <a class="navbar-brand" href="#">StudentHub</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,21 +30,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="../app/views/index">
             <i class="fa fa-lg fa-home"></i> Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="../app/views/feedback">Feedback</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="./views/thankyou">Thank you</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        
+
       </ul>
     </div>
   </nav>
@@ -55,49 +52,44 @@
     <div class="row justify-content-md-center">
       <div class="col-md-auto">
         <h1>
-         Student Registration
+          Student Registration
         </h1>
-        <p>Welcome to
-         Student Hub
+        <p>Welcome to Student Hub
         </p>
       </div>
-
     </div>
 
     <div class="row justify-content-md-center">
-        <div class="col-md-auto">
-            <form action="../app/views/feedback" method="POST">
-              <p>
-                  <label class="col-6 col-md-auto">Student Number:</label>
-                  <input type="text" name="username">
-              </p>
-              <p>
-                  <label class="col-6 col-md-auto">Program:</label>
-                  <input type="text" name="username">
-              </p>
-              <p>
-                  <label class="col-6 col-md-auto">e-mail:</label>
-                  <input type="email" name="username">
-              </p>
-              <p>
-                  <label class="col-6 col-md-auto">Password:</label>
-                  <input type="password" name="password">
-              </p>
-          
-              <p>
-                  <input class ="form-control btn btn-primary" type="submit" value="login" name="loginEnter">
-              </p>
-          </form>
-        </div>
-  
+      <div class="col-md-auto">
+        <form action="../app/views/feedback" method="POST">
+          <p>
+            <label class="col-6 col-md-auto">Student Number:</label>
+            <input type="text" name="stdentnumber">
+          </p>
+          <p>
+            <label class="col-6 col-md-auto">Program:</label>
+            <input type="text" name="program">
+          </p>
+          <p>
+            <label class="col-6 col-md-auto">e-mail:</label>
+            <input type="email" name="username">
+          </p>
+          <p>
+            <label class="col-6 col-md-auto">Password:</label>
+            <input type="password" name="password">
+          </p>
+          <p>
+            <input class="form-control btn btn-primary" type="submit" value="login" name="loginEnter">
+          </p>
+        </form>
       </div>
+    </div>
   </div>
 
-  
+
   <!-- JavaScript Section -->
   <script src="./jquery/dist/jquery.min.js"></script>
   <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
-
   <script src="./Scripts/core/app.js"></script>
 </body>
 
